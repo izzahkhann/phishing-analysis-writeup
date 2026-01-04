@@ -7,7 +7,7 @@
 - Target IP Address: 10.48.175.211
 
 ### Introduction
-This exercise focuses on understanding how phishing emails work and how security analysts analyze email headers and email content to determine whether an email is malicious or benign.
+This exercise focuses on understanding how phishing emails work and how security analysts analyze email headers and email content to determine whether an email is malicious or harmless.
 
 ### Understanding Phishing and Email Basics
 Phishing is a type of social engineering attack that uses emails to trick users into revealing sensitive information.
