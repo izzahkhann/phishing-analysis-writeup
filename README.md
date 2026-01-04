@@ -1,4 +1,4 @@
-# phishing-analysis-fundamentals
+# phishing-analysis-writeup
 
 ## Exercise 1: Phishing Analysis Fundamentals (TryHackMe)
 
