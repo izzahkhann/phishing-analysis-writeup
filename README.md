@@ -1,29 +1,26 @@
-# phishing-analysis-writeup
-
 ## Exercise 1: Phishing Analysis Fundamentals (TryHackMe)
 
-### Target Machine Information
-- Title: Phishing Emails 1 v2.2-badr
-- Target IP Address: 10.48.175.211
-
 ### Introduction
-This exercise focuses on understanding how phishing emails work and how security analysts analyze email headers and email content to determine whether an email is malicious or harmless.
+This exercise introduces the fundamentals of phishing attacks and how security analysts analyze emails to determine whether they are malicious or harmless.
 
-### Understanding Phishing and Email Basics
-Phishing is a type of social engineering attack that uses emails to trick users into revealing sensitive information.
+---
 
-An email address consists of three parts:
+### Email and Phishing Basics
+Phishing is a social engineering attack that uses emails to trick users into revealing sensitive information or downloading malicious files.
+
+An email address consists of:
 - User mailbox
 - @ symbol
 - Domain name
 
 Email technology was first introduced in the 1970s.
 
-### Email Delivery Protocols
-Emails are sent and received using several protocols:
+---
 
+### Email Delivery Protocols
+Emails are sent and received using the following protocols:
 - SMTP: Used to send emails
-- POP3: Downloads emails to one device
+- POP3: Downloads emails to a single device
 - IMAP: Stores emails on the server and allows access from multiple devices
 
 Secure ports used:
@@ -31,37 +28,38 @@ Secure ports used:
 - IMAP (Secure): 993
 - POP3 (Secure): 995
 
+---
+
 ### Email Header Analysis
-Email headers contain important information used to analyze suspicious emails.
+Email headers contain important information for phishing analysis.
 
-Important email header fields:
-- From: Sender email address
-- To: Recipient email address
-- Subject: Email subject
-- Date: Time email was sent
-- Reply-To: Address used when replying
+Important header fields:
+- From
+- To
+- Subject
+- Date
+- Reply-To
 
-The email header field that functions the same as "Reply-To" is:
+The email header that functions the same as "Reply-To" is:
 - Return-Path
 
-After identifying the sender’s IP address, additional information can be retrieved using:
+After identifying the sender’s IP address, more information can be retrieved using:
 - ARIN (American Registry for Internet Numbers)
 
-### Email Body and Attachments
-The email body may be written in plain text or HTML format.
+---
 
-HTML emails may include:
-- Images
-- Embedded links
-- Attachments
+### Email Body and Attachments
+The email body can be in plain text or HTML format and may include images, links, or attachments.
 
 From the analysis:
 - Blocked image URI: https://i.imgur.com/LSWOtDI.png
 - PDF attachment name: Payment-updateid.pdf
 - Decoded PDF content: THM{BENIGN_PDF_ATTACHMENT}
 
+---
+
 ### Types of Phishing
-Different phishing techniques include:
+Common types of phishing include:
 - Spam
 - Phishing
 - Spear phishing
@@ -69,15 +67,18 @@ Different phishing techniques include:
 - Smishing
 - Vishing
 
-### Phishing Email Case Analysis
-From the analyzed email (email3.eml):
+---
 
+### Phishing Email Case Analysis
+Based on the analyzed email sample:
 - Masqueraded trusted entity: Home Depot
 - Sender email: support@teckbe.com
 - Subject line: Order Placed : Your Order ID OD2321657089291 Placed Successfully
 - Malicious URL (defanged): hxxp[://]t[.]teckbe[.]com
 
-### Conclusion
-Through this exercise, I learned how phishing emails are structured and how to analyze email headers, email bodies, and attachments. This knowledge is important for identifying phishing attacks and preventing security incidents.
+---
 
-Business Email Compromise (BEC) refers to attacks where an attacker gains access to a legitimate business email account to perform fraudulent activities.
+### Conclusion
+This exercise helped me understand how emails work and how phishing attacks are identified through email headers, email content, and attachments.
+
+Business Email Compromise (BEC) refers to attacks where attackers gain access to a legitimate business email account to perform fraudulent activities.
