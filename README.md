@@ -1,7 +1,5 @@
 # phishing-analysis-fundamentals
 
-# Phishing Analysis Writeup
-
 ## Exercise 1: Phishing Analysis Fundamentals (TryHackMe)
 
 ### Target Machine Information
